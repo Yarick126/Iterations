@@ -1,0 +1,13 @@
+.layout{
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  main{
+    display: flex;
+    flex-direction: row;
+
+    div[id="#left-side"]{
+      width: 200px;
+    }
+  }
+}

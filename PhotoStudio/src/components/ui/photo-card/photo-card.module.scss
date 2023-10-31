@@ -1,0 +1,17 @@
+.photo-card{
+  max-height: 580px;
+  width: 17em;
+  position: relative;
+  img{
+    object-fit: cover;
+    height: 100%;
+  }
+  span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+  }
+}

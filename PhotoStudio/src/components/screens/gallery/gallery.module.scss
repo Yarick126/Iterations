@@ -1,0 +1,12 @@
+.gallery{
+  text-align: right;
+  span{
+    color: red;
+  }
+  div[id="photo-category"]{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+  }
+}

@@ -1,0 +1,25 @@
+.left-side{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 120px;
+  row-gap: 150px;
+
+  span {
+    height: 325px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  div[id="icons"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    
+    svg{
+      size: 30px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import './variables';
+
+@mixin redButtonStyle(){
+  font-size: 24px;
+  background-color: $red-color;
+  padding: 20px;
+}

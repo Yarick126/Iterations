@@ -1,0 +1,31 @@
+.service-card{
+  width: 20em;
+  height: 30em;
+
+  padding: 0.5em 2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  row-gap: 2em;
+
+  transition: box-shadow 0.5s;
+
+  &:hover{
+    box-shadow: 10px 10px 10px sandybrown;
+    cursor: pointer;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  span{
+    font-size: 1.4em;
+    color: black;
+    font-weight: bolder;
+  }
+}

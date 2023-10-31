@@ -1,0 +1,35 @@
+.book-me{
+  
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  span[id="redText"]{
+    color: red;
+    align-self: self-end;
+  }
+  div[id="input-board"]{
+
+    display: flex;
+
+    flex-direction: column;
+    row-gap: 2em;
+
+    div[id="header-spans"]{
+      display: flex;
+      flex-direction: column;
+  
+      row-gap: 0.5em;
+    }
+    div[id="about-fields"]{
+
+      div[id="input-fields"]{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+      }
+    }
+      
+  } 
+ 
+
+}

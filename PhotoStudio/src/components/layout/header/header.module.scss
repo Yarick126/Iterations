@@ -1,0 +1,36 @@
+.header{
+  padding: 50px 120px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 650px;
+  align-items: center;
+
+  div[id="links"]{
+    width: 25em;
+    max-height: 1em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1em;
+    color: #000;
+
+    a{
+      width: 1rem;
+      text-decoration: none;
+      font-weight: normal;
+      flex-grow: 1;
+      &:hover{
+        font-weight: bold;
+      }
+      &:visited{
+        color: #000;
+      }
+      &:active{
+        font-weight: bold;
+      }
+    }
+  }
+}
