@@ -1,0 +1,119 @@
+@import url('./_reset.css');
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  max-height: 3.8em;
+  padding: 1em 4em;
+  background-color: aquamarine;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5em;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav>a{
+  color: rgb(85, 165, 42);
+  font-size: 1em;
+  transition: font-size 0.5s;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover{
+  font-size: 1.2rem;
+}
+
+main{
+  padding: 2em 10em;
+  flex-grow: 2;
+}
+
+main h1{
+  font-weight: 700;
+}
+
+main section{
+  margin-top: 2em;
+}
+
+p{
+  line-height: 2em;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5em;
+  width: 100%;
+  padding: 2em 5em;
+  background-color: aquamarine;
+  flex: 1 1 0;
+}
+
+footer>div{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+footer a{
+  color: rgb(85, 165, 42);
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+.post_input{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  justify-content: start;
+  margin-top: 2em;
+  width: 25em;
+}
+.post_input textarea{
+  resize: none;
+}
+.post_input input,textarea{
+  color: rgb(46, 11, 11);
+  font-size: 1.5em;
+  background-color: rgb(75, 159, 111);
+  padding: 1em;
+  border-radius: 1.5em;
+}
+
+.post_input button{
+  width: fit-content;
+  align-self: center;
+  background-color: orange;
+  padding: 1.5em 2em;
+  border-radius: 1.5em;
+  font-size: 1.5em;
+  transition: all 0.5s;
+}
+
+.post_input button:hover{
+  color: orange;
+  background-color: rgb(200, 131, 2);
+}
+
+input::placeholder,textarea::placeholder{
+  color: rgb(46, 11, 11);
+  font-size: 1.5em;
+}

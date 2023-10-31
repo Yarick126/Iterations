@@ -1,0 +1,6 @@
+@import url('../HTML/css/_reset.css');
+
+html, body{
+  height: 100%;
+}
+

@@ -1,0 +1,207 @@
+@import url(../HTML/css/_reset.css);
+
+html, body{
+  height: 100%;
+}
+
+.app{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "left right"
+  "left right";
+}
+
+.left{
+  border: 1px solid black;
+  grid-area: left;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: 
+    "up"
+    "blocks";
+}
+
+.up{
+  grid-area: up;
+  background-color: red;
+}
+
+.blocks{
+  grid-area: blocks;
+  border: 2px orange solid;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "greens pink"
+  "greens pink"
+  "greens pink";
+}
+
+.greens{
+  grid-area: greens;
+  border: 2px black solid;
+  display: grid;
+  grid-template-columns: 100px;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 40px;
+  justify-content: center;
+ 
+}
+
+.greens>div{
+  font-size: 15px;
+  background-color: green;
+  padding: 1em;
+}
+
+#clickMe{
+  font-size: 15px;
+}
+
+.pink{
+  grid-area: pink;
+  background-color: pink;
+}
+
+.right{
+  padding: 5em;
+  grid-area: right;
+  background-color: yellow;
+}
+
+.up{
+  padding: 5em;
+}
+
+.up>div{
+  width: 2em;
+  height: 2em;
+  background-color: wheat;
+
+  animation: loading ease-in-out 0.5s alternate infinite;
+}
+
+@keyframes loading {
+  0% {
+    margin-left: 0;
+  }
+  10%{
+    margin-left: 10px;
+  }
+
+  30%{
+    margin-left: 50px;
+  }
+
+  50%{
+    margin-left: 60px;
+  }
+  70%{
+    margin-left: 80px;
+  }
+  90%{
+    margin-left: 90px;
+  }
+  100% {
+    margin-left: 100px;
+  }
+}
+
+input{
+  width: 70px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgb(132, 255, 0);
+}
+
+select{
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: rgb(132, 255, 0);
+}
+
+button{
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: rgb(132, 255, 0);
+}
+button:hover{
+  background-color: rgb(153, 243, 58);
+}
+
+span{
+  font-size: 30px;
+}
+
+form{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  
+}
+
+form>input{
+  width: 150px;
+  font-size: 15px;
+}
+
+form>select{
+  width: 150px;
+  font-size: 15px;
+}
+form{
+  font-size: 15px;
+  width: fit-content;
+  padding: 1em;
+}
+
+@media (max-width: 1279px) {
+  .app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .right{
+
+    height: 40vh;
+
+    
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+  }
+
+  .up{
+    
+    height: 10vh;
+  }
+
+  .blocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .greens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .greens>div{
+    width: 100px;
+   
+  }
+
+  .pink{
+    height: 10vh;
+    
+  }
+}

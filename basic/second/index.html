@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="app">
+    <div class="right">
+      <div id="calculate">
+        <input type="text">
+        <select name="operator" id="">
+          <option value="+">+</option>
+          <option value="*">*</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+        </select>
+        <input type="text">
+        <button>=</button>
+        <span id="answer"></span>
+      </div>
+      <form >
+        <label for="name">
+          Name
+        </label>
+        <input type="text" id="name">
+        <label for="age">Age</label>
+        <input type="text" id="age">
+
+        <label for="sex">Sex:</label>
+        <select id="sex">
+          <option value="choose your sex">choose your sex</option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+
+        <label for="isAlive">isAlive:</label>
+        <select id="isAlive">
+          <option value='true'>yes</option>
+          <option value='false'>no</option>
+        </select>
+
+        <button id="send">Send info</button>
+      </form>
+      <span id="userInfo">
+        Info: 
+      </span>
+    </div>
+      <div class="left">
+        <div class="up">
+          <div></div>
+        </div>
+        <div class="blocks">
+          <div class="greens">
+            <div>
+              <span id="hw">Holla </span>
+              <script>
+                const span = document.querySelector('#hw')
+                span.style.fontSize = '14px'
+                span.textContent += 'world!'
+                span.addEventListener('mousemove',()=>{
+                  span.style.color = 'white'
+                })
+                span.addEventListener('mouseout',()=>{
+                  span.style.color = 'black'
+                })
+              </script>
+            </div>
+            <div>
+            </div>
+            <div>
+              <button id="clickMe">Click mE!</button>
+              <script>
+                const button = document.querySelector('#clickMe')
+                button.addEventListener('click', ()=>{
+                  button.style.backgroundColor = 'blue'
+                })
+              </script>
+            </div>
+          </div>
+          <div class="pink">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem alias ipsum rem quidem quaerat maxime nulla, sapiente sunt incidunt blanditiis minus molestias facere sit sed reiciendis voluptates optio magni ad.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
